@@ -5,6 +5,9 @@ Simple script to find google passwords
 This was made to be run on a network of computers on a kali linux installation (or probably anything else)
 
 # How to use
+
+Mount the windows media device
+
 Change the file permissions:
 
 `chmod +x script.py`
