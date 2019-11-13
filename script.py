@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
+import os
 WindowsUserDirectory="/media/root/OS/Users"
 prefix=""
 googleDirectory="" #default
 prefixFlag=False
-import os
 currDir=os.popen('pwd').read().strip()
 os.system('ls '+WindowsUserDirectory+' >> '+currDir+'/users')
 fin=open('users')
 data=fin.readlines()
+fin.close()
 usernames=[]
 for i in data:
     if str(i)[:2]==prefix or not prefixFlag:
         usernames.append(i.strip())
-fin.close()
 try:
 	os.system('mkdir /root/Desktop/Passwords')
 except:
