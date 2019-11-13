@@ -1,5 +1,6 @@
 prefix=""
 import os
+currDir=os.system('pwd')
 #os.system('ls >> users')
 fin=open('users')
 data=fin.readlines()
