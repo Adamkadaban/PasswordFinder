@@ -1,6 +1,7 @@
 
 # PasswordFinder
 Simple script to find google passwords
+
 **This repo is dead as a result of updates to how chrome encrypts passwords
 
 This was made to be run on a network of computers on a kali linux installation (or probably anything else)
